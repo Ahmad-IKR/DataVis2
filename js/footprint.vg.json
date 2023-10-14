@@ -4,8 +4,8 @@
   "height": 350,
   "background": "#B2C3A8",
   "title": {
-    "text": "CO2 Emissions by Country",
-    "subtitle": "A bar chart showing the Top 10 countries by Co2 emissions in 2019"
+    "text": "CO2 Emissions by Sector",
+    "subtitle": "An Area Chart showing emissions from different sectors from the world"
   },
   "data": { "url": "data/sectoremission.csv" },
   "mark": "area",
@@ -13,8 +13,7 @@
     "x": {
       "timeUnit": "yearmonth",
       "field": "date",
-      "axis": { "format": "%Y" },
-      "title": "Year"
+      "title": "Year/Months"
     },
     "y": {
       "aggregate": "sum",

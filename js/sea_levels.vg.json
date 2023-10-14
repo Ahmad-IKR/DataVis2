@@ -4,6 +4,10 @@
     "width": 900,
     "height": 500,  
     "background": "#B2C3A8",
+    "title": {
+        "text": "Sea Levels Over Time",
+        "subtitle": "A scatterplot showing how sea levels have risen over time by using GMSL GIA"
+      },    
     "data": {"url": "data/sealevel.csv"},
     "mark": "point",
     "encoding": {
