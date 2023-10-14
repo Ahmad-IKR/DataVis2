@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing the top 10 countries by co2 emissions",
+  "width": 800,
+  "height": 350,
+  "background": "#B2C3A8",
+  "title": {
+    "text": "Severe Weather Events",
+    "subtitle": "Number of Severe Weather Events 2016 - 2022"
+  },
+  "data": { "url": "data/severeweatherevents.csv" },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "year",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Fog", "Cold", "Storm"],
+        "range": ["#608f69","#8BB283","#3E4B40"]
+      },
+      "title": "Weather type"
+    }
+  }
+}

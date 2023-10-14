@@ -1,0 +1,14 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+    "width": 900,
+    "height": 500,  
+    "background": "#B2C3A8",
+    "data": {"url": "data/sealevel.csv"},
+    "mark": "point",
+    "encoding": {
+        "x": {"timeUnit": "year", "field": "Year"},
+        "y": {"field": "GMSL_GIA", "type": "quantitative", "title": "Sea Level (GMSL_GIA)"}
+    }
+  }
+  

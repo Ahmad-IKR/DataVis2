@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing the top 10 countries by co2 emissions",
+  "width": 900,
+  "height": 350,
+  "background": "#B2C3A8",
+  "title": {
+    "text": "CO2 Emissions by Country",
+    "subtitle": "A bar chart showing the Top 10 countries by Co2 emissions in 2019"
+  },
+  "data": { "url": "data/co2_emissions_kt_by_country.csv" },
+  "params": [
+    {
+      "name": "CO2_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 10000000,
+        "step": 10000,
+        "name": "Minimum Population: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "sort": [{ "field": "co2_value", "order": "descending" }]
+    },
+    {"filter": "datum.co2_value > CO2_Above"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "country_name",
+      "type": "ordinal",
+      "title": "Country Name",
+      "sort": "-y"
+    },
+    "y": {
+      "field": "co2_value",
+      "type": "quantitative",
+      "title": "CO2 Value"
+    },
+    "tooltip": [
+      { "field": "country_name", "type": "ordinal", "title": "Country Name" },
+      { "field": "co2_value", "type": "quantitative", "title": "CO2 Value" }
+    ]
+  }
+}

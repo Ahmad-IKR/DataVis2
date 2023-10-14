@@ -1,0 +1,78 @@
+body {background-color: #cfe2c4;}
+
+h1 {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #585757ea;
+    text-align: center; 
+}
+
+#title {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 80px;
+    font-weight: bold; 
+    color: #413C33;
+}
+
+#subtitle {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 50px;
+    font-weight: bold; 
+    color: #413C33;
+}
+
+
+.p1{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    word-spacing: 6px;
+    line-height:35px;
+    color: #4d4c4c;
+    text-align: left; 
+}
+
+
+.page {
+    width: 1500px;
+    background-color: #B2C3A8;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+.pure-g {
+    margin-bottom: 45px;
+}
+
+.title{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: bold; 
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #4d4c4c;
+    text-align: left;
+}
+
+.title1{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: bold; 
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #4d4c4c;
+    text-align: left;
+}
+
+#barchart{
+    margin-bottom: 55px;
+}
+
+.metadata{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #4d4c4c;
+    text-align: left;
+    margin-top: 10px;
+}
